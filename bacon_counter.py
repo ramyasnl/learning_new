@@ -15,7 +15,7 @@
 # voting_data.append({"county":"Denver", "registered_voters": 463353})
 # voting_data.append({"county":"Jefferson", "registered_voters": 432438})
 # print(voting_data[2])
-import MRJob
+from mrjob.job import MRJob
 class Bacon_count(MRJob):
    def mapper(self, _, line):
        for word in line.split():
